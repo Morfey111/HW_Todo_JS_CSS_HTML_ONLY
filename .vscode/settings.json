@@ -1,0 +1,19 @@
+{
+    "spellright.language": [
+        "Bulgarian",
+        "English (American)",
+        "English (British)"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "python",
+        "javascriptreact"
+    ],
+    "editor.fontSize": 16,
+    "liveServer.settings.port": 5501,
+    // "files.associations": {
+	// 	"*.js": "javascriptreact"
+	// },
+}
