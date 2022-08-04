@@ -14,16 +14,14 @@ let decrement = () => {
   return num--;
 };
 
-
-
 addBtn.addEventListener("click", () => {
   if (inputField.value.length !== 0) {
     let newItem = document.createElement("div");
 
     increment();
     newItem.innerHTML = `
-      <p>${num}. ${inputField.value}
-      <input type="checkbox" class="chech-box">
+      <p class='input'>${num}. ${inputField.value}
+      <input type="checkbox" id="checkbox" name="checkbox" value="todo">
       <i  class="fa-solid fa-trash-can"></i>
       </p>
       `;
@@ -34,17 +32,13 @@ addBtn.addEventListener("click", () => {
     alert("Please enter new task!!!");
   }
   totalItems.innerHTML = `Total Items : ${num}`;
-
 });
 
-
-task.addEventListener('click', (e)=>{
-  if(e.target.classList.contains('fa-trash-can')){
-    e.target.parentElement.parentElement.remove()
+task.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-trash-can")) {
+    e.target.parentElement.parentElement.remove();
     // if can you explain ???
-    decrement()
+    decrement();
   }
   totalItems.innerHTML = `Total Items : ${num}`;
-
-})
-
+});
